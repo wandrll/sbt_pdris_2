@@ -1,0 +1,13 @@
+services:
+  firstapp:
+    image: wandrl/firstapp
+    container_name: firstapp
+    ports:
+      - 12345:12345
+  secondapp:
+    image: wandrl/secondapp
+    container_name: secondapp
+    ports:
+      - 12366:12346
+    depends_on:
+      - firstapp
