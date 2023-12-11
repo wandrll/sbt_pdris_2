@@ -11,7 +11,7 @@ docker build -t wandrl/secondapp ./secondapp
 
 
 # run containers
-docker-compose up
+docker-compose up -d
 
 # localhost:12345 - firstapp
 # localhost:12366 - secondapp
